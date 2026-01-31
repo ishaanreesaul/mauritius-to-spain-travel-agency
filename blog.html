@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog | SpainVoyage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <i class="fas fa-phone-alt"></i> +230 123 4567
+                    <i class="fas fa-envelope"></i> info@spainvoyage.mu
+                </div>
+                <div class="top-bar-right">
+                    <a href="currency-converter.html" class="currency-converter">
+                        <i class="fas fa-exchange-alt"></i> Currency Converter
+                    </a>
+                    <a href="travel-insurance.html" class="insurance-link">
+                        <i class="fas fa-shield-alt"></i> Travel Insurance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-plane-departure"></i> Spain<span>Voyage</span>
+            </a>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="destinations.html"><i class="fas fa-globe"></i> All Destinations</a>
+                        <a href="barcelona.html"><i class="fas fa-city"></i> Barcelona</a>
+                        <a href="madrid.html"><i class="fas fa-monument"></i> Madrid</a>
+                        <a href="seville.html"><i class="fas fa-guitar"></i> Seville</a>
+                        <a href="valencia.html"><i class="fas fa-umbrella-beach"></i> Valencia</a>
+                        <a href="basque-country.html"><i class="fas fa-utensils"></i> Basque Country</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-suitcase-rolling"></i> Packages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="packages.html"><i class="fas fa-box"></i> All Packages</a>
+                        <a href="honeymoon-packages.html"><i class="fas fa-heart"></i> Honeymoon</a>
+                        <a href="family-packages.html"><i class="fas fa-users"></i> Family</a>
+                        <a href="tour-packages.html"><i class="fas fa-map-signs"></i> Guided Tours</a>
+                    </div>
+                </li>
+                <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="testimonial.html"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="travel-tips.html"><i class="fas fa-lightbulb"></i> Travel Tips</a></li>
+                <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Spain Travel Blog</h1>
+            <p>Insights, guides, and stories for Mauritian travelers exploring Spain</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="blog-featured">
+                <div class="featured-blog-card">
+                    <div class="blog-image">
+                        <img src="images/barcelona-header.jpg" alt="Featured Blog Post">
+                        <div class="blog-category">Featured</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date"><i class="far fa-calendar"></i> March 15, 2024</span>
+                        <h2>10 Must-Visit Tapas Bars in Barcelona for Mauritian Foodies</h2>
+                        <p class="blog-excerpt">Discover the best tapas bars in Barcelona that will delight Mauritian palates. From traditional Catalan dishes to innovative fusion creations, this guide covers where to find authentic Spanish tapas experiences.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="blog-categories">
+                <button class="blog-cat-btn active" data-category="all">All Articles</button>
+                <button class="blog-cat-btn" data-category="destinations">Destinations</button>
+                <button class="blog-cat-btn" data-category="food">Food & Wine</button>
+                <button class="blog-cat-btn" data-category="culture">Culture & History</button>
+                <button class="blog-cat-btn" data-category="tips">Travel Tips</button>
+                <button class="blog-cat-btn" data-category="family">Family Travel</button>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card" data-category="destinations">
+                    <div class="blog-image">
+                        <img src="images/madrid-header.jpg" alt="Madrid Travel Guide">
+                        <div class="blog-category">Destinations</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Madrid in 3 Days: Perfect Itinerary for Mauritian Travelers</h3>
+                        <p class="blog-excerpt">How to make the most of a short trip to Spain's capital. Includes must-see attractions, best times to visit popular spots, and restaurant recommendations suitable for Mauritian tastes.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Feb 28, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="food">
+                    <div class="blog-image">
+                        <img src="images/basque-country-header.jpg" alt="Basque Cuisine">
+                        <div class="blog-category">Food & Wine</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Pintxos vs Tapas: Understanding Basque Culinary Culture</h3>
+                        <p class="blog-excerpt">Learn the difference between Spanish tapas and Basque pintxos. Discover the best places to experience this unique culinary tradition in San Sebastian and Bilbao.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Feb 15, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="culture">
+                    <div class="blog-image">
+                        <img src="images/seville-header.jpg" alt="Flamenco Culture">
+                        <div class="blog-category">Culture & History</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Flamenco: A Guide for Mauritian Travelers</h3>
+                        <p class="blog-excerpt">Everything you need to know about flamenco before visiting Andalusia. Learn about its history, where to see authentic performances, and cultural etiquette for visitors.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 30, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="tips">
+                    <div class="blog-image">
+                        <img src="images/valencia-header.jpg" alt="Travel Tips">
+                        <div class="blog-category">Travel Tips</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Budget Travel Spain: Tips for Mauritian Travelers</h3>
+                        <p class="blog-excerpt">How to experience Spain without breaking the bank. Includes money-saving tips on accommodation, transportation, dining, and free attractions across Spain.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 18, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="family">
+                    <div class="blog-image">
+                        <img src="images/family-package.jpg" alt="Family Travel">
+                        <div class="blog-category">Family Travel</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Spain with Kids: Top Family-Friendly Activities</h3>
+                        <p class="blog-excerpt">The best activities and attractions for families traveling from Mauritius to Spain. Includes theme parks, interactive museums, and child-friendly beaches.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 5, 2024</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="destinations">
+                    <div class="blog-image">
+                        <img src="images/honeymoon-package.jpg" alt="Honeymoon Destinations">
+                        <div class="blog-category">Destinations</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Romantic Getaways: Best Honeymoon Spots in Spain</h3>
+                        <p class="blog-excerpt">Discover the most romantic destinations in Spain for honeymooners from Mauritius. From coastal escapes to historic cities, find your perfect romantic retreat.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Dec 20, 2023</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="btn">Load More Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="newsletter">
+                <h2>Subscribe to Our Travel Blog</h2>
+                <p>Get the latest Spain travel tips, destination guides, and special offers delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <p class="privacy-note"><small>We respect your privacy. Unsubscribe at any time.</small></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Spain<span>Voyage</span></h3>
+                    <p>Your trusted partner for Mauritius to Spain travel since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="testimonial.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="blog.html" class="active"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Essential Info</h3>
+                    <ul>
+                        <li><a href="practical-info.html"><i class="fas fa-chevron-right"></i> Practical Information</a></li>
+                        <li><a href="travel-tips.html"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Spain Street, Port Louis, Mauritius</p>
+                        <p><i class="fas fa-phone"></i> +230 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@spainvoyage.mu</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm | Sat: 9am-1pm</p>
+                    </div>
+                    <a href="currency-converter.html" class="currency-btn">
+                        <i class="fas fa-calculator"></i> Currency Converter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpainVoyage. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Blog filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.blog-cat-btn');
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

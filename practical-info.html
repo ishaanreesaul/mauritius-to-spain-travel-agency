@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Information | SpainVoyage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <i class="fas fa-phone-alt"></i> +230 123 4567
+                    <i class="fas fa-envelope"></i> info@spainvoyage.mu
+                </div>
+                <div class="top-bar-right">
+                    <a href="currency-converter.html" class="currency-converter">
+                        <i class="fas fa-exchange-alt"></i> Currency Converter
+                    </a>
+                    <a href="travel-insurance.html" class="insurance-link">
+                        <i class="fas fa-shield-alt"></i> Travel Insurance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-plane-departure"></i> Spain<span>Voyage</span>
+            </a>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="destinations.html"><i class="fas fa-globe"></i> All Destinations</a>
+                        <a href="barcelona.html"><i class="fas fa-city"></i> Barcelona</a>
+                        <a href="madrid.html"><i class="fas fa-monument"></i> Madrid</a>
+                        <a href="seville.html"><i class="fas fa-guitar"></i> Seville</a>
+                        <a href="valencia.html"><i class="fas fa-umbrella-beach"></i> Valencia</a>
+                        <a href="basque-country.html"><i class="fas fa-utensils"></i> Basque Country</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-suitcase-rolling"></i> Packages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="packages.html"><i class="fas fa-box"></i> All Packages</a>
+                        <a href="honeymoon-packages.html"><i class="fas fa-heart"></i> Honeymoon</a>
+                        <a href="family-packages.html"><i class="fas fa-users"></i> Family</a>
+                        <a href="tour-packages.html"><i class="fas fa-map-signs"></i> Guided Tours</a>
+                    </div>
+                </li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="testimonial.html"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Practical Information</h1>
+            <p>Essential travel tips and information for your trip to Spain</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="practical-info-tabs">
+                <div class="practical-tab-buttons">
+                    <button class="practical-tab-btn active" data-tab="money">
+                        <i class="fas fa-money-bill-wave"></i> Money
+                    </button>
+                    <button class="practical-tab-btn" data-tab="health">
+                        <i class="fas fa-heartbeat"></i> Health
+                    </button>
+                    <button class="practical-tab-btn" data-tab="transport">
+                        <i class="fas fa-bus"></i> Transport
+                    </button>
+                    <button class="practical-tab-btn" data-tab="communication">
+                        <i class="fas fa-phone"></i> Communication
+                    </button>
+                </div>
+                
+                <div class="practical-tab-content active" id="money">
+                    <h3>Money & Budgeting in Spain</h3>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4><i class="fas fa-credit-card"></i> Payment Methods</h4>
+                            <p><strong>Credit Cards:</strong> Widely accepted (Visa, MasterCard)<br>
+                            <strong>Cash:</strong> Useful for small purchases<br>
+                            <strong>ATMs:</strong> Available everywhere (avoid airport ATMs)<br>
+                            <strong>Tipping:</strong> 5-10% in restaurants (optional)</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-euro-sign"></i> Daily Budget</h4>
+                            <p><strong>Budget:</strong> €50-70 per day<br>
+                            <strong>Mid-range:</strong> €70-150 per day<br>
+                            <strong>Luxury:</strong> €150+ per day<br>
+                            <strong>Food:</strong> €20-40 per day per person</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-shopping-bag"></i> Shopping</h4>
+                            <p><strong>VAT Refund:</strong> Available for non-EU residents<br>
+                            <strong>Sales Tax:</strong> 21% (refundable for tourists)<br>
+                            <strong>Opening Hours:</strong> 10am-8pm (closed 2-5pm in some areas)<br>
+                            <strong>Bargaining:</strong> Not common except in markets</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="practical-tab-content" id="health">
+                    <h3>Health & Safety in Spain</h3>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4><i class="fas fa-shield-alt"></i> Safety Tips</h4>
+                            <p><strong>Pickpocketing:</strong> Be careful in tourist areas<br>
+                            <strong>Emergency:</strong> Dial 112 for any emergency<br>
+                            <strong>Police:</strong> 091 (National Police)<br>
+                            <strong>Tourist Police:</strong> Available in major cities</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-first-aid"></i> Healthcare</h4>
+                            <p><strong>EU Citizens:</strong> EHIC card required<br>
+                            <strong>Non-EU:</strong> Travel insurance recommended<br>
+                            <strong>Pharmacies:</strong> Green cross sign, open 9am-10pm<br>
+                            <strong>Hospitals:</strong> High quality medical care available</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-sun"></i> Sun Protection</h4>
+                            <p><strong>Suncream:</strong> SPF 30+ recommended<br>
+                            <strong>Hydration:</strong> Drink plenty of water<br>
+                            <strong>Peak Sun:</strong> Avoid 1pm-4pm in summer<br>
+                            <strong>Heat:</strong> Can reach 40°C in summer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="practical-tab-content" id="transport">
+                    <h3>Transport in Spain</h3>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4><i class="fas fa-train"></i> Trains</h4>
+                            <p><strong>High-speed (AVE):</strong> Madrid to Barcelona in 2.5h<br>
+                            <strong>Renfe:</strong> National railway company<br>
+                            <strong>Booking:</strong> Book in advance for discounts<br>
+                            <strong>Stations:</strong> Major cities have central stations</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-bus"></i> Buses</h4>
+                            <p><strong>Intercity:</strong> ALSA is main operator<br>
+                            <strong>City buses:</strong> Efficient in all major cities<br>
+                            <strong>Tickets:</strong> Purchase at stations or online<br>
+                            <strong>Cost:</strong> Cheaper than trains</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-taxi"></i> Taxis & Ride-sharing</h4>
+                            <p><strong>Taxis:</strong> Metered, available 24/7<br>
+                            <strong>Uber:</strong> Available in major cities<br>
+                            <strong>Cabify:</strong> Popular local alternative<br>
+                            <strong>Fares:</strong> Displayed on meter</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="practical-tab-content" id="communication">
+                    <h3>Communication in Spain</h3>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4><i class="fas fa-wifi"></i> Internet & SIM Cards</h4>
+                            <p><strong>Free WiFi:</strong> Available in cafes and hotels<br>
+                            <strong>SIM Cards:</strong> Purchase at airports or shops<br>
+                            <strong>Providers:</strong> Movistar, Vodafone, Orange<br>
+                            <strong>Roaming:</strong> EU roaming charges apply</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-language"></i> Language</h4>
+                            <p><strong>Official:</strong> Spanish (Castellano)<br>
+                            <strong>Regional:</strong> Catalan, Basque, Galician<br>
+                            <strong>English:</strong> Widely spoken in tourist areas<br>
+                            <strong>Useful Phrases:</strong> Hola, Gracias, Por favor</p>
+                        </div>
+                        <div class="info-card">
+                            <h4><i class="fas fa-clock"></i> Time & Etiquette</h4>
+                            <p><strong>Time Zone:</strong> CET (UTC+1)<br>
+                            <strong>Business Hours:</strong> 9am-2pm, 4pm-8pm<br>
+                            <strong>Meal Times:</strong> Late (lunch 2-4pm, dinner 9-11pm)<br>
+                            <strong>Greetings:</strong> Kiss on both cheeks common</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Emergency Contacts</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>General Emergency</h4>
+                    <p>Dial 112 for any emergency</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Police</h4>
+                    <p>091 (National Police)</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-ambulance"></i>
+                    <h4>Medical Emergency</h4>
+                    <p>061 (Ambulance)</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-fire"></i>
+                    <h4>Fire Department</h4>
+                    <p>080 (Fire Emergency)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need More Information?</h2>
+                <p>Contact our travel experts for personalized advice for your trip to Spain</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn">Contact Us</a>
+                    <a href="faq.html" class="btn btn-outline">View FAQs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Spain<span>Voyage</span></h3>
+                    <p>Your trusted partner for Mauritius to Spain travel since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="testimonial.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Essential Info</h3>
+                    <ul>
+                        <li><a href="practical-info.html"><i class="fas fa-chevron-right"></i> Practical Information</a></li>
+                        <li><a href="travel-tips.html"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Spain Street, Port Louis, Mauritius</p>
+                        <p><i class="fas fa-phone"></i> +230 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@spainvoyage.mu</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm | Sat: 9am-1pm</p>
+                    </div>
+                    <a href="currency-converter.html" class="currency-btn">
+                        <i class="fas fa-calculator"></i> Currency Converter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpainVoyage. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SpainVoyage - Get in Touch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-plane-departure"></i> Spain<span>Voyage</span>
+            </a>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="destinations.html"><i class="fas fa-globe"></i> All Destinations</a>
+                        <a href="barcelona.html"><i class="fas fa-city"></i> Barcelona</a>
+                        <a href="madrid.html"><i class="fas fa-monument"></i> Madrid</a>
+                        <a href="seville.html"><i class="fas fa-guitar"></i> Seville</a>
+                        <a href="valencia.html"><i class="fas fa-umbrella-beach"></i> Valencia</a>
+                        <a href="basque-country.html"><i class="fas fa-utensils"></i> Basque Country</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-suitcase-rolling"></i> Packages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="packages.html"><i class="fas fa-box"></i> All Packages</a>
+                        <a href="honeymoon-packages.html"><i class="fas fa-heart"></i> Honeymoon</a>
+                        <a href="family-packages.html"><i class="fas fa-users"></i> Family</a>
+                        <a href="tour-packages.html"><i class="fas fa-map-signs"></i> Tour package</a>
+                    </div>
+                </li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="testimonial.html"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="contact.html" class="contact-btn active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help plan your perfect Spanish adventure from Mauritius</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you. Here's how you can reach us.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Visit Our Office</h3>
+                                <p>123 Spain Street<br>Port Louis, Mauritius</p>
+                                <small>Open: Mon-Fri 9am-6pm, Sat 9am-1pm</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Call Us</h3>
+                                <p>+230 123 4567 (Office)<br>+230 987 6543 (Emergency)</p>
+                                <small>24/7 emergency support for traveling clients</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email Us</h3>
+                                <p>info@spainvoyage.mu<br>bookings@spainvoyage.mu</p>
+                                <small>Response within 24 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Live Chat</h3>
+                                <p>Available during business hours</p>
+                                <button class="btn btn-small">Start Chat</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Emergency Contact</h4>
+                        <p>If you're currently traveling in Spain and need immediate assistance:</p>
+                        <p class="emergency-number">+34 123 456 789 (Spanish Office)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you shortly</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+230 XXX XXXX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="booking">New Booking Inquiry</option>
+                                <option value="existing">Existing Booking</option>
+                                <option value="custom">Custom Package Request</option>
+                                <option value="visa">Visa Assistance</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="destination">Destination Interest</label>
+                            <select id="destination" name="destination">
+                                <option value="">Any destination</option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="seville">Seville</option>
+                                <option value="valencia">Valencia</option>
+                                <option value="basque">Basque Country</option>
+                                <option value="multiple">Multiple Cities</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travel-date">Approx. Travel Date</label>
+                            <input type="date" id="travel-date" name="travel-date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <input type="number" id="travelers" name="travelers" min="1" max="20" placeholder="e.g., 2">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your travel plans, interests, and any special requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for Spain travel tips and offers</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <div class="form-note">
+                            <p><small>* Required fields. We respect your privacy and will never share your information.</small></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Find Our Office</h2>
+            <p class="section-subtitle">Located in the heart of Port Louis, Mauritius</p>
+            
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-info">
+                    <h4><i class="fas fa-map-pin"></i> SpainVoyage Headquarters</h4>
+                    <p>123 Spain Street, Port Louis, Mauritius</p>
+                    <div class="directions">
+                        <p><strong>Parking:</strong> Available at Caudan Waterfront</p>
+                        <p><strong>Nearest Bus Stop:</strong> Port Louis Terminal</p>
+                        <p><strong>Landmark:</strong> Opposite Central Bank of Mauritius</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Port+Louis,+Mauritius" target="_blank" class="btn btn-small">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-preview">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are your office hours?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our Port Louis office is open Monday to Friday from 9:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 1:00 PM. We're closed on Sundays and public holidays.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How quickly will I get a response?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We respond to all inquiries within 24 hours during business days. For urgent matters, please call our office directly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer virtual consultations?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer Zoom, WhatsApp, and phone consultations for your convenience. Book a consultation slot through our contact form.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-gradient">
+        <div class="container">
+            <h2 class="section-title">Contact the Right Department</h2>
+            
+            <div class="departments-grid">
+                <div class="department-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Bookings & Reservations</h3>
+                    <p>bookings@spainvoyage.mu</p>
+                    <p>+230 123 4567 (Ext. 1)</p>
+                </div>
+                
+                <div class="department-card">
+                    <i class="fas fa-passport"></i>
+                    <h3>Visa Assistance</h3>
+                    <p>visa@spainvoyage.mu</p>
+                    <p>+230 123 4567 (Ext. 2)</p>
+                </div>
+                
+                <div class="department-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support</h3>
+                    <p>support@spainvoyage.mu</p>
+                    <p>+230 123 4567 (Ext. 3)</p>
+                </div>
+                
+                <div class="department-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Billing & Payments</h3>
+                    <p>billing@spainvoyage.mu</p>
+                    <p>+230 123 4567 (Ext. 4)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Your Spanish Journey Today</h2>
+                <p>Contact us for a free consultation about your trip to Spain</p>
+                <div class="cta-buttons">
+                    <a href="tel:+2301234567" class="btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="#contactForm" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Spain<span>Voyage</span></h3>
+                    <p>Your trusted partner for Mauritius to Spain travel since 2009. We specialize in creating unforgettable Spanish experiences for Mauritian travelers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="testimonial.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Essential Info</h3>
+                    <ul>
+                        <li><a href="practical-info.html"><i class="fas fa-chevron-right"></i> Practical Information</a></li>
+                        <li><a href="travel-tips.html"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Spain Street, Port Louis, Mauritius</p>
+                        <p><i class="fas fa-phone"></i> +230 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@spainvoyage.mu</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm | Sat: 9am-1pm</p>
+                    </div>
+                    <a href="currency-converter.html" class="currency-btn">
+                        <i class="fas fa-calculator"></i> Currency Converter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpainVoyage. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

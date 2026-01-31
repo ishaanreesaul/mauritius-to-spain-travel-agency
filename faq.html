@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | SpainVoyage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <i class="fas fa-phone-alt"></i> +230 123 4567
+                    <i class="fas fa-envelope"></i> info@spainvoyage.mu
+                </div>
+                <div class="top-bar-right">
+                    <a href="currency-converter.html" class="currency-converter">
+                        <i class="fas fa-exchange-alt"></i> Currency Converter
+                    </a>
+                    <a href="travel-insurance.html" class="insurance-link">
+                        <i class="fas fa-shield-alt"></i> Travel Insurance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-plane-departure"></i> Spain<span>Voyage</span>
+            </a>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="destinations.html"><i class="fas fa-globe"></i> All Destinations</a>
+                        <a href="barcelona.html"><i class="fas fa-city"></i> Barcelona</a>
+                        <a href="madrid.html"><i class="fas fa-monument"></i> Madrid</a>
+                        <a href="seville.html"><i class="fas fa-guitar"></i> Seville</a>
+                        <a href="valencia.html"><i class="fas fa-umbrella-beach"></i> Valencia</a>
+                        <a href="basque-country.html"><i class="fas fa-utensils"></i> Basque Country</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-suitcase-rolling"></i> Packages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="packages.html"><i class="fas fa-box"></i> All Packages</a>
+                        <a href="honeymoon-packages.html"><i class="fas fa-heart"></i> Honeymoon</a>
+                        <a href="family-packages.html"><i class="fas fa-users"></i> Family</a>
+                        <a href="tour-packages.html"><i class="fas fa-map-signs"></i> Guided Tours</a>
+                    </div>
+                </li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="testimonial.html"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="travel-tips.html"><i class="fas fa-lightbulb"></i> Travel Tips</a></li>
+                <li><a href="faq.html" class="active"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about traveling to Spain from Mauritius</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" placeholder="Search for questions..." id="faqSearch">
+                <button class="btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">All Questions</button>
+                <button class="faq-category-btn" data-category="visa">Visa & Documents</button>
+                <button class="faq-category-btn" data-category="packages">Packages & Booking</button>
+                <button class="faq-category-btn" data-category="travel">Travel & Logistics</button>
+                <button class="faq-category-btn" data-category="spain">About Spain</button>
+                <button class="faq-category-btn" data-category="payment">Payment & Insurance</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-section">
+                    <h3><i class="fas fa-passport"></i> Visa & Documentation</h3>
+                    <div class="faq-item" data-category="visa">
+                        <div class="faq-question">
+                            <h4>Do Mauritian citizens need a visa for Spain?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Mauritian citizens require a Schengen visa to visit Spain. The visa allows travel within the entire Schengen area for up to 90 days within a 180-day period.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="visa">
+                        <div class="faq-question">
+                            <h4>What documents are needed for a Schengen visa application?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Required documents include:
+                            <ul>
+                                <li>Completed visa application form</li>
+                                <li>Valid passport (minimum 3 months validity after return)</li>
+                                <li>Passport-sized photos</li>
+                                <li>Travel insurance with minimum €30,000 coverage</li>
+                                <li>Flight itinerary</li>
+                                <li>Hotel reservations</li>
+                                <li>Proof of financial means</li>
+                                <li>Employment letter or business registration</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="visa">
+                        <div class="faq-question">
+                            <h4>How long does the visa process take?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The standard processing time is 15 calendar days from application submission. During peak seasons (May-August), it may take up to 30 days. We recommend applying at least 3 months before your intended travel date.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3><i class="fas fa-suitcase-rolling"></i> Packages & Booking</h3>
+                    <div class="faq-item" data-category="packages">
+                        <div class="faq-question">
+                            <h4>Can I customize a package?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, all our packages can be customized. You can modify the duration, destinations, accommodation type, activities, and inclusions. Contact our travel consultants for a custom quote.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="packages">
+                        <div class="faq-question">
+                            <h4>What is included in your packages?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our packages typically include:
+                            <ul>
+                                <li>Return flights from Mauritius to Spain</li>
+                                <li>Accommodation</li>
+                                <li>Airport transfers</li>
+                                <li>Some meals (as specified)</li>
+                                <li>Guided tours and activities</li>
+                                <li>Entrance fees to attractions</li>
+                                <li>24/7 support during your trip</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="packages">
+                        <div class="faq-question">
+                            <h4>What is your cancellation policy?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Cancellation policies vary by package and provider:
+                            <ul>
+                                <li>More than 60 days before departure: 90% refund</li>
+                                <li>30-60 days before departure: 50% refund</li>
+                                <li>Less than 30 days: No refund (travel insurance recommended)</li>
+                                <li>Flight cancellations subject to airline policies</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3><i class="fas fa-plane"></i> Travel & Logistics</h3>
+                    <div class="faq-item" data-category="travel">
+                        <div class="faq-question">
+                            <h4>What is the best time to visit Spain from Mauritius?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The ideal times are:
+                            <ul>
+                                <li>Spring (April-June): Pleasant weather, fewer crowds</li>
+                                <li>Autumn (September-October): Warm days, cool evenings</li>
+                                <li>Summer (July-August): Hot, perfect for beach destinations but crowded</li>
+                                <li>Winter (November-March): Cold in most regions, ski season in Pyrenees</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="travel">
+                        <div class="faq-question">
+                            <h4>How do I get around in Spain?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Spain has excellent transportation:
+                            <ul>
+                                <li>High-speed trains (AVE) between major cities</li>
+                                <li>Domestic flights for longer distances</li>
+                                <li>Efficient metro systems in cities</li>
+                                <li>Buses for regional travel</li>
+                                <li>Rental cars for flexibility (international license required)</li>
+                            </ul>
+                            Most of our packages include transportation between cities.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="travel">
+                        <div class="faq-question">
+                            <h4>What should I pack for Spain?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Essentials include:
+                            <ul>
+                                <li>Comfortable walking shoes</li>
+                                <li>Layered clothing (temperatures vary)</li>
+                                <li>Sun protection (hat, sunglasses, sunscreen)</li>
+                                <li>Adaptor for European plugs (Type C/F)</li>
+                                <li>Copy of important documents</li>
+                                <li>Basic medications</li>
+                                <li>Modest clothing for visiting churches</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3><i class="fas fa-euro-sign"></i> Payment & Insurance</h3>
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>What payment methods do you accept?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept:
+                            <ul>
+                                <li>Bank transfer (Mauritian Rupees or Euros)</li>
+                                <li>Credit cards (Visa, MasterCard)</li>
+                                <li>Debit cards</li>
+                                <li>Cash payments at our office in Port Louis</li>
+                                <li>Online payments via secure portal</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>Is travel insurance mandatory?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, for two reasons:
+                            <ul>
+                                <li>Schengen visa requirement: Minimum €30,000 medical coverage</li>
+                                <li>Protection: Covers medical emergencies, trip cancellation, lost luggage, etc.</li>
+                            </ul>
+                            We offer comprehensive travel insurance packages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>Do you offer payment plans?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer flexible payment plans:
+                            <ul>
+                                <li>Deposit to secure booking: 30% of total cost</li>
+                                <li>Second payment: 40% due 60 days before travel</li>
+                                <li>Final payment: 30% due 30 days before travel</li>
+                                <li>Custom payment schedules available</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-cta">
+                <h2 class="section-title">Still Have Questions?</h2>
+                <p class="section-subtitle">Our travel experts are here to help with any questions about traveling to Spain from Mauritius</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Call Us</h3>
+                            <p>+230 123 4567</p>
+                            <small>Mon-Fri: 9am-6pm | Sat: 9am-1pm</small>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Email Us</h3>
+                            <p>info@spainvoyage.mu</p>
+                            <small>Response within 24 hours</small>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Live Chat</h3>
+                            <p>Available on website</p>
+                            <small>Chat with our experts in real-time</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Spain<span>Voyage</span></h3>
+                    <p>Your trusted partner for Mauritius to Spain travel since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="faq.html" class="active"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="testimonial.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Essential Info</h3>
+                    <ul>
+                        <li><a href="practical-info.html"><i class="fas fa-chevron-right"></i> Practical Information</a></li>
+                        <li><a href="travel-tips.html"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Spain Street, Port Louis, Mauritius</p>
+                        <p><i class="fas fa-phone"></i> +230 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@spainvoyage.mu</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm | Sat: 9am-1pm</p>
+                    </div>
+                    <a href="currency-converter.html" class="currency-btn">
+                        <i class="fas fa-calculator"></i> Currency Converter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpainVoyage. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.faq-category-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+            const searchInput = document.getElementById('faqSearch');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    faqItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question h4').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+            
+            // FAQ accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

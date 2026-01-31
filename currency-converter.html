@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter | SpainVoyage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <i class="fas fa-phone-alt"></i> +230 123 4567
+                    <i class="fas fa-envelope"></i> info@spainvoyage.mu
+                </div>
+                <div class="top-bar-right">
+                    <a href="currency-converter.html" class="currency-converter active">
+                        <i class="fas fa-exchange-alt"></i> Currency Converter
+                    </a>
+                    <a href="travel-insurance.html" class="insurance-link">
+                        <i class="fas fa-shield-alt"></i> Travel Insurance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-plane-departure"></i> Spain<span>Voyage</span>
+            </a>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="destinations.html"><i class="fas fa-globe"></i> All Destinations</a>
+                        <a href="barcelona.html"><i class="fas fa-city"></i> Barcelona</a>
+                        <a href="madrid.html"><i class="fas fa-monument"></i> Madrid</a>
+                        <a href="seville.html"><i class="fas fa-guitar"></i> Seville</a>
+                        <a href="valencia.html"><i class="fas fa-umbrella-beach"></i> Valencia</a>
+                        <a href="basque-country.html"><i class="fas fa-utensils"></i> Basque Country</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-suitcase-rolling"></i> Packages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="packages.html"><i class="fas fa-box"></i> All Packages</a>
+                        <a href="honeymoon-packages.html"><i class="fas fa-heart"></i> Honeymoon</a>
+                        <a href="family-packages.html"><i class="fas fa-users"></i> Family</a>
+                        <a href="tour-packages.html"><i class="fas fa-map-signs"></i> Guided Tours</a>
+                    </div>
+                </li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="testimonial.html"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Currency Converter</h1>
+            <p>Convert currencies for your Spain trip planning from Mauritius</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="converter-container" id="currencyConverter">
+                <div class="converter-card">
+                    <div class="converter-header">
+                        <h3><i class="fas fa-calculator"></i> Convert Currency</h3>
+                        <p>Get real-time exchange rates for your trip planning</p>
+                    </div>
+                    
+                    <div class="currency-input">
+                        <div class="input-group">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" value="1000" min="0" step="10">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="fromCurrency">From</label>
+                            <select id="fromCurrency">
+                                <option value="MUR">Mauritian Rupee (MUR)</option>
+                                <option value="EUR">Euro (EUR)</option>
+                                <option value="USD">US Dollar (USD)</option>
+                                <option value="GBP">British Pound (GBP)</option>
+                                <option value="AUD">Australian Dollar (AUD)</option>
+                                <option value="JPY">Japanese Yen (JPY)</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn-swap">
+                            <i class="fas fa-exchange-alt"></i>
+                        </button>
+                        
+                        <div class="input-group">
+                            <label for="toCurrency">To</label>
+                            <select id="toCurrency">
+                                <option value="EUR">Euro (EUR)</option>
+                                <option value="MUR">Mauritian Rupee (MUR)</option>
+                                <option value="USD">US Dollar (USD)</option>
+                                <option value="GBP">British Pound (GBP)</option>
+                                <option value="AUD">Australian Dollar (AUD)</option>
+                                <option value="JPY">Japanese Yen (JPY)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="converter-result">
+                        <div class="result-display">
+                            <div class="input-amount">
+                                <span id="inputAmount">1,000 MUR</span>
+                            </div>
+                            <div class="equals-sign">=</div>
+                            <div class="output-amount">
+                                <span id="outputAmount">20.20 EUR</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-convert">
+                            <i class="fas fa-sync-alt"></i> Convert Currency
+                        </button>
+                    </div>
+                    
+                    <div class="conversion-details">
+                        <h4><i class="fas fa-info-circle"></i> Conversion Details</h4>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Exchange Rate</span>
+                                <span class="detail-value" id="exchangeRate">1 EUR = 49.50 MUR</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Last Updated</span>
+                                <span class="detail-value" id="lastUpdated">Today</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Update Frequency</span>
+                                <span class="detail-value">Daily</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="converter-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-chart-line"></i> Recent Rates</h4>
+                        <div class="rate-history">
+                            <div class="history-item">
+                                <span>EUR to MUR</span>
+                                <span>49.50</span>
+                            </div>
+                            <div class="history-item">
+                                <span>USD to MUR</span>
+                                <span>45.80</span>
+                            </div>
+                            <div class="history-item">
+                                <span>GBP to MUR</span>
+                                <span>57.20</span>
+                            </div>
+                            <div class="history-item">
+                                <span>EUR to USD</span>
+                                <span>1.08</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-lightbulb"></i> Travel Money Tips</h4>
+                        <ul class="money-tips">
+                            <li><i class="fas fa-check"></i> Notify your bank before traveling</li>
+                            <li><i class="fas fa-check"></i> Use credit cards for big purchases</li>
+                            <li><i class="fas fa-check"></i> Carry some cash for small vendors</li>
+                            <li><i class="fas fa-check"></i> Avoid airport currency exchange</li>
+                            <li><i class="fas fa-check"></i> Use ATMs for better rates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Estimated Costs in Spain</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4><i class="fas fa-utensils"></i> Food & Dining</h4>
+                    <p><strong>Budget:</strong> €15-25 per meal<br>
+                    <strong>Mid-range:</strong> €25-50 per meal<br>
+                    <strong>Fine dining:</strong> €50+ per meal</p>
+                </div>
+                <div class="info-card">
+                    <h4><i class="fas fa-hotel"></i> Accommodation</h4>
+                    <p><strong>Budget hotel:</strong> €50-80 per night<br>
+                    <strong>Mid-range hotel:</strong> €80-150 per night<br>
+                    <strong>Luxury hotel:</strong> €150+ per night</p>
+                </div>
+                <div class="info-card">
+                    <h4><i class="fas fa-ticket-alt"></i> Attractions</h4>
+                    <p><strong>Museums:</strong> €10-20 per person<br>
+                    <strong>Guided tours:</strong> €20-50 per person<br>
+                    <strong>Theme parks:</strong> €40-60 per person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Book Your Trip?</h2>
+                <p>Now that you know the costs, let's plan your perfect Spanish adventure</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn">Get Free Quote</a>
+                    <a href="packages.html" class="btn btn-outline">View Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Spain<span>Voyage</span></h3>
+                    <p>Your trusted partner for Mauritius to Spain travel since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="testimonial.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Essential Info</h3>
+                    <ul>
+                        <li><a href="practical-info.html"><i class="fas fa-chevron-right"></i> Practical Information</a></li>
+                        <li><a href="travel-tips.html"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Spain Street, Port Louis, Mauritius</p>
+                        <p><i class="fas fa-phone"></i> +230 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@spainvoyage.mu</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm | Sat: 9am-1pm</p>
+                    </div>
+                    <a href="currency-converter.html" class="currency-btn">
+                        <i class="fas fa-calculator"></i> Currency Converter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpainVoyage. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

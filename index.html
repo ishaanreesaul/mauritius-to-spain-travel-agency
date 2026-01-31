@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpainVoyage | Your Gateway to Spain from Mauritius</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <i class="fas fa-phone-alt"></i> +230 123 4567
+                    <i class="fas fa-envelope"></i> info@spainvoyage.mu
+                </div>
+                <div class="top-bar-right">
+                    <a href="currency-converter.html" class="currency-converter">
+                        <i class="fas fa-exchange-alt"></i> Currency Converter
+                    </a>
+                    <a href="travel-insurance.html" class="insurance-link">
+                        <i class="fas fa-shield-alt"></i> Travel Insurance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-plane-departure"></i> Spain<span>Voyage</span>
+            </a>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-map-marked-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="destinations.html"><i class="fas fa-globe"></i> All Destinations</a>
+                        <a href="barcelona.html"><i class="fas fa-city"></i> Barcelona</a>
+                        <a href="madrid.html"><i class="fas fa-monument"></i> Madrid</a>
+                        <a href="seville.html"><i class="fas fa-guitar"></i> Seville</a>
+                        <a href="valencia.html"><i class="fas fa-umbrella-beach"></i> Valencia</a>
+                        <a href="basque-country.html"><i class="fas fa-utensils"></i> Basque Country</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-suitcase-rolling"></i> Packages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="packages.html"><i class="fas fa-box"></i> All Packages</a>
+                        <a href="honeymoon-packages.html"><i class="fas fa-heart"></i> Honeymoon</a>
+                        <a href="family-packages.html"><i class="fas fa-users"></i> Family</a>
+                        <a href="tour-packages.html"><i class="fas fa-map-signs"></i> Guided Tours</a>
+                    </div>
+                </li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="testimonial.html"><i class="fas fa-star"></i> Testimonials</a></li>
+                <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/barcelona-header.jpg');">
+                <div class="slide-content">
+                    <h1>Discover Spain from Mauritius</h1>
+                    <p>Experience the magic of Spain with our exclusive travel packages</p>
+                    <a href="packages.html" class="btn btn-hero">Explore Packages</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/madrid-header.jpg');">
+                <div class="slide-content">
+                    <h1>Spanish Culture Awaits</h1>
+                    <p>Immerse yourself in rich history, vibrant festivals, and delicious cuisine</p>
+                    <a href="destinations.html" class="btn btn-hero">View Destinations</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-search">
+            <div class="search-box">
+                <h3>Plan Your Spanish Adventure</h3>
+                <form class="search-form">
+                    <select>
+                        <option>Select Destination</option>
+                        <option>Barcelona</option>
+                        <option>Madrid</option>
+                        <option>Seville</option>
+                        <option>Valencia</option>
+                        <option>Basque Country</option>
+                    </select>
+                    <select>
+                        <option>Package Type</option>
+                        <option>Honeymoon</option>
+                        <option>Family</option>
+                        <option>Guided Tour</option>
+                    </select>
+                    <input type="date" placeholder="Travel Date">
+                    <input type="number" placeholder="Travelers" min="1">
+                    <button type="submit" class="btn-search">
+                        <i class="fas fa-search"></i> Search Packages
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title">Quick Access</h2>
+            <div class="links-grid">
+                <a href="destinations.html" class="link-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Destinations</span>
+                </a>
+                <a href="packages.html" class="link-card">
+                    <i class="fas fa-suitcase-rolling"></i>
+                    <span>Packages</span>
+                </a>
+                <a href="currency-converter.html" class="link-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Currency Converter</span>
+                </a>
+                <a href="travel-insurance.html" class="link-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Travel Insurance</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="section-subtitle">Explore Spain's most enchanting cities and regions</p>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="images/barcelona-header.jpg" alt="Barcelona">
+                        <div class="card-badge">Most Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Barcelona</h3>
+                        <p class="destination-desc">Where Gaudí's dreams meet Mediterranean charm</p>
+                        <div class="destination-features">
+                            <span><i class="fas fa-sun"></i> Sunny Climate</span>
+                            <span><i class="fas fa-utensils"></i> Tapas Paradise</span>
+                        </div>
+                        <a href="barcelona.html" class="btn btn-small">Explore</a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="images/madrid-header.jpg" alt="Madrid">
+                    </div>
+                    <div class="card-content">
+                        <h3>Madrid</h3>
+                        <p class="destination-desc">Spain's vibrant capital of art, culture & nightlife</p>
+                        <div class="destination-features">
+                            <span><i class="fas fa-landmark"></i> Royal Palace</span>
+                            <span><i class="fas fa-moon"></i> Lively Nightlife</span>
+                        </div>
+                        <a href="madrid.html" class="btn btn-small">Explore</a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="images/seville-header.jpg" alt="Seville">
+                    </div>
+                    <div class="card-content">
+                        <h3>Seville</h3>
+                        <p class="destination-desc">The heart of Andalusian culture & flamenco</p>
+                        <div class="destination-features">
+                            <span><i class="fas fa-music"></i> Flamenco Shows</span>
+                            <span><i class="fas fa-archway"></i> Moorish Architecture</span>
+                        </div>
+                        <a href="seville.html" class="btn btn-small">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="destinations.html" class="btn">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Packages</h2>
+            <p class="section-subtitle">Curated experiences for every type of traveler</p>
+            <div class="packages-grid">
+                <div class="package-card featured">
+                    <div class="package-header">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Romantic Honeymoon</h3>
+                        <p class="package-desc">7-day luxury escape for couples in Barcelona and Costa Brava</p>
+                        <div class="package-price">
+                            <span class="price">€1,299</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Luxury hotels</li>
+                            <li><i class="fas fa-check"></i> Private transfers</li>
+                            <li><i class="fas fa-check"></i> Romantic dinners</li>
+                            <li><i class="fas fa-check"></i> Spa treatments</li>
+                        </ul>
+                        <a href="honeymoon-packages.html" class="btn-package">View Package</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Family Adventure</h3>
+                        <p class="package-desc">10-day fun-filled trip for families with kids of all ages</p>
+                        <div class="package-price">
+                            <span class="price">€899</span>
+                            <span class="per-person">per adult</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Kid-friendly hotels</li>
+                            <li><i class="fas fa-check"></i> Theme park tickets</li>
+                            <li><i class="fas fa-check"></i> Beach activities</li>
+                            <li><i class="fas fa-check"></i> Family dining</li>
+                        </ul>
+                        <a href="family-packages.html" class="btn-package">View Package</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <i class="fas fa-map-signs"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Cultural Tour</h3>
+                        <p class="package-desc">14-day guided tour of Spain's historical and cultural gems</p>
+                        <div class="package-price">
+                            <span class="price">€1,599</span>
+                            <span class="per-person">per person</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Expert guides</li>
+                            <li><i class="fas fa-check"></i> All entrance fees</li>
+                            <li><i class="fas fa-check"></i> 4-star hotels</li>
+                            <li><i class="fas fa-check"></i> Local experiences</li>
+                        </ul>
+                        <a href="tour-packages.html" class="btn-package">View Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="packages.html" class="btn">View All Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose SpainVoyage</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <i class="fas fa-award"></i>
+                    <h4>15+ Years Experience</h4>
+                    <p>Specialized in Mauritius to Spain travel since 2009</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-euro-sign"></i>
+                    <h4>Best Price Guarantee</h4>
+                    <p>Competitive rates with no hidden costs</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock assistance during your trip</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-passport"></i>
+                    <h4>Visa Assistance</h4>
+                    <p>Full support with visa application process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section bg-gradient">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Your Spanish Adventure?</h2>
+                <p>Contact us today to start planning your perfect trip to Spain</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn">Get Free Consultation</a>
+                    <a href="packages.html" class="btn btn-outline">Browse Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Spain<span>Voyage</span></h3>
+                    <p>Your trusted partner for Mauritius to Spain travel since 2009. We specialize in creating unforgettable Spanish experiences for Mauritian travelers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="testimonial.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Essential Info</h3>
+                    <ul>
+                        <li><a href="practical-info.html"><i class="fas fa-chevron-right"></i> Practical Information</a></li>
+                        <li><a href="travel-tips.html"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Spain Street, Port Louis, Mauritius</p>
+                        <p><i class="fas fa-phone"></i> +230 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@spainvoyage.mu</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm | Sat: 9am-1pm</p>
+                    </div>
+                    <a href="currency-converter.html" class="currency-btn">
+                        <i class="fas fa-calculator"></i> Currency Converter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpainVoyage. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
